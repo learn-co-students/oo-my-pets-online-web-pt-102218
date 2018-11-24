@@ -26,5 +26,11 @@ attr_accessor :name, :fishes, :dogs, :cats
   def say_species
     "I am a human."
   end
+
+  def buy_fish(name)
+    bought_fish = Fish.new(name)
+    @pets[:fishes] << bought_fish
+  end
+
   # code goes here
 end
